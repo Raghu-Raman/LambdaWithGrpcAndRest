@@ -1,0 +1,19 @@
+//Defining the version of the protobuf being used
+syntax = "proto3";
+
+package request;
+//Define the service that the server provides to the client
+service logRequest{
+  rpc logMessageFind(requestCall) returns (response);
+}
+//The message 'requestCall' will contain all the input parameters that will be passed from client to server
+message requestCall{
+  string date = 1;
+  string time = 2;
+  string delta = 3;
+  string pattern = 4;
+}
+//The message 'response' will contain the output parameters that will be sent from server to client
+message response{
+  string result = 1;
+}

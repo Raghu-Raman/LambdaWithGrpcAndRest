@@ -1,0 +1,62 @@
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+ERROR:grpc._server:Exception calling application: requestType
+Traceback (most recent call last):
+  File "/Users/raghuraman/PycharmProjects/grpcExample/env/lib/python3.9/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/raghuraman/PycharmProjects/grpcExample/protoServer.py", line 23, in logMessageFind
+    if(request.requestType == "GET"):
+AttributeError: requestType
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+ERROR:grpc._server:Exception calling application: requestType
+Traceback (most recent call last):
+  File "/Users/raghuraman/PycharmProjects/grpcExample/env/lib/python3.9/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/raghuraman/PycharmProjects/grpcExample/protoServer.py", line 23, in logMessageFind
+    if(request.requestType == "GET"):
+AttributeError: requestType
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+ERROR:grpc._server:Exception calling application: requestType
+Traceback (most recent call last):
+  File "/Users/raghuraman/PycharmProjects/grpcExample/env/lib/python3.9/site-packages/grpc/_server.py", line 443, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/Users/raghuraman/PycharmProjects/grpcExample/protoServer.py", line 23, in logMessageFind
+    if(request.requestType == "GET"):
+AttributeError: requestType
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-30 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 12:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 20 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 20 INFOTAINMENT
+INFO:root:GET Request made from grpc client

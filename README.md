@@ -1,12 +1,12 @@
-# LambdaWithGrpcAndRest
+# Lambda with Grpc and Rest
 **Name**: Raghuraman Venkatesh
 **E-mail**: rvenka26@uic.edu  
-##Project Description
+## Project Description
  The main objective of the project is to create lambda function in aws Lambda along with an exposed API endpoint, and connect it with server-client architectures connected by grpc and rest. The first part of the project is to create a client-server architecture connected by grpc 
  The second part of the project is to create a server program with a rest api attached with it.
 
-##Project Overview
-####Grpc
+## Project Overview
+#### Grpc
   gRPC is a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication.
 #### Ec2 instance
   The first step is to create an EC2 instance and run the LogFileGenerator on the instance, and subsequently move the generated log files to the s3 bucket.
@@ -80,8 +80,21 @@
      - Open new terminal and run the client program using the command ``` python3 protoClient.py```
      - The input paramters must be given in the command line along with client execution and must be in the order of date,time, deltaTime and pattern.
      - Output will be received in the client side.
+     #### Configuration File
+     The configuration file is ``` configFileServer.ini ```. This configuration file will contain all the parameters that will be used in the server file.
+     #### Logging
+      - Import Logging package in server file.
+      - Set level for the logging parameter.
+      - Set the file name where all the logging information is to be stored.
   ## Rest API Server and client.
    The rest local server is created using the flask package. The server will be listening in the port 5000. The Rest api can be tested using the ```test.py``` file.
    The input parameters can be changed in the ```test.py``` file.
+   
+  ## Testing
+   - The testing file is under the name ```testingServer.py```
+   - The input to this file is given from the config file.
+   - Testing of configuration parameters and different outcomes is given here.
+   
+   
 
 

@@ -104,7 +104,7 @@
 *Input with pattern not present as a log file*
 
 ![](<img width="959" alt="Screen Shot 2022-10-31 at 10 48 43 PM" src="https://user-images.githubusercontent.com/78893470/199154947-da359641-a568-4966-a458-2a66e0d55ad3.png">)
-*Input with time limits crossing the time interval in the log file
+*Input with time limits crossing the time interval in the log file*
 
 ![](<img width="1214" alt="Screen Shot 2022-10-31 at 10 49 08 PM" src="https://user-images.githubusercontent.com/78893470/199155055-45ce71ce-90ae-45ef-aaa0-b1d0bac6637f.png">)
 *Input with proper values*

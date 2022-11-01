@@ -96,20 +96,12 @@
    - Testing of configuration parameters and different outcomes is given here.
    
   ## Output Files
+   <img width="1333" alt="Screen Shot 2022-10-31 at 10 48 04 PM" src="https://user-images.githubusercontent.com/78893470/199274891-7d56c258-8ca9-466e-83bf-405ea7a7f4d1.png">
+<img width="982" alt="Screen Shot 2022-10-31 at 10 48 29 PM" src="https://user-images.githubusercontent.com/78893470/199274892-833cf65d-ae39-45b7-bf53-c5487b78b80b.png">
+<img width="959" alt="Screen Shot 2022-10-31 at 10 48 43 PM" src="https://user-images.githubusercontent.com/78893470/199274894-ac84a776-4dc5-45e8-947e-e7e08fea8117.png">
+<img width="1214" alt="Screen Shot 2022-10-31 at 10 49 08 PM" src="https://user-images.githubusercontent.com/78893470/199274895-c6490821-43b3-4e86-9bb9-2a7837140ec9.png">
+<img width="1120" alt="Screen Shot 2022-10-31 at 10 49 31 PM" src="https://user-images.githubusercontent.com/78893470/199274896-725615d1-1a50-4368-a4b3-7d44876fce41.png">
+<img width="910" alt="Screen Shot 2022-10-31 at 10 54 18 PM" src="https://user-images.githubusercontent.com/78893470/199274897-9e23b160-96bb-4cc3-849d-9ef1b6e2d6a0.png">
+<img width="1069" alt="Screen Shot 2022-10-31 at 10 57 38 PM" src="https://user-images.githubusercontent.com/78893470/199274898-9889a650-a33f-4a01-8018-6f9dea446ba9.png">
+<img width="1004" alt="Screen Shot 2022-10-31 at 10 59 15 PM" src="https://user-images.githubusercontent.com/78893470/199274899-c50d7bb3-435f-414c-be75-8f4874ae1300.png">
 
-   ![Input with date not present as a log file](Images/Screen Shot 2022-10-31 at 10 48 04 PM)
-   
-   ![Input with pattern not present as a log file](Images/Screen Shot 2022-10-31 at 10 48 29 PM)
-
-   ![Input with time limits crossing the time interval in the log file](Images/Screen Shot 2022-10-31 at 10 48 43 PM)
-
-   ![Input with proper values](Images/Screen Shot 2022-10-31 at 10 49 08 PM)
-  
-   ![Input with time not present in the log file](Images/Screen Shot 2022-10-31 at 10 54 18 PM)
-   
-   ![Test result](Images/creen Shot 2022-10-31 at 10 49 31 PM)
-
-   ![Result from rest api client](Images/Screen Shot 2022-10-31 at 10 57 38 PM)
-  
-   ![Rest API server side](Images/Screen Shot 2022-10-31 at 10 59 15 PM)
-  

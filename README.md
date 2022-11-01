@@ -80,9 +80,9 @@
      - Open new terminal and run the client program using the command ``` python3 protoClient.py```
      - The input paramters must be given in the command line along with client execution and must be in the order of date,time, deltaTime and pattern.
      - Output will be received in the client side.
-     #### Configuration File
+   #### Configuration File
      The configuration file is ``` configFileServer.ini ```. This configuration file will contain all the parameters that will be used in the server file.
-     #### Logging
+   #### Logging
       - Import Logging package in server file.
       - Set level for the logging parameter.
       - Set the file name where all the logging information is to be stored.
@@ -95,6 +95,13 @@
    - The input to this file is given from the config file.
    - Testing of configuration parameters and different outcomes is given here.
    
-   
+  ## Output Files
 
-
+![Input with date not present as a log file](<img width="1333" alt="Screen Shot 2022-10-31 at 10 48 04 PM" src="https://user-images.githubusercontent.com/78893470/199154749-80454872-3f44-49ee-868e-32cb0d3f171d.png">)
+![Input with pattern not present as a log file]<img width="982" alt="Screen Shot 2022-10-31 at 10 48 29 PM" src="https://user-images.githubusercontent.com/78893470/199154871-54b7800d-e807-4495-8791-90ff9f18e197.png">
+![Input with time limits crossing the time interval in the log file]<img width="959" alt="Screen Shot 2022-10-31 at 10 48 43 PM" src="https://user-images.githubusercontent.com/78893470/199154947-da359641-a568-4966-a458-2a66e0d55ad3.png">
+![Input with proper values]<img width="1214" alt="Screen Shot 2022-10-31 at 10 49 08 PM" src="https://user-images.githubusercontent.com/78893470/199155055-45ce71ce-90ae-45ef-aaa0-b1d0bac6637f.png">
+![Input with time not present in the log file]<img width="910" alt="Screen Shot 2022-10-31 at 10 54 18 PM" src="https://user-images.githubusercontent.com/78893470/199155265-a1eb2cb0-a60e-4872-b930-dce890bbb5c8.png">
+![Test result]<img width="1120" alt="Screen Shot 2022-10-31 at 10 49 31 PM" src="https://user-images.githubusercontent.com/78893470/199155331-67140478-ea89-42e3-9e50-8199299c0dda.png">
+![Result from rest api client]<img width="1069" alt="Screen Shot 2022-10-31 at 10 57 38 PM" src="https://user-images.githubusercontent.com/78893470/199155821-bc6e0a0f-0226-49f1-9126-795e2246759a.png">
+![Rest API server side]<img width="1004" alt="Screen Shot 2022-10-31 at 10 59 15 PM" src="https://user-images.githubusercontent.com/78893470/199155913-29e2de7a-cb1b-4d43-a7b3-829e3c624aa2.png">

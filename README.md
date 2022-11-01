@@ -105,7 +105,7 @@
 
    ![Input with proper values](Images/Screen Shot 2022-10-31 at 10 49 08 PM)
   
-   ![Input with time not present in the log file](Images/Screen Shot 2022-10-31 at 10 54 18 PM" src="https://user-images.githubusercontent.com/78893470/199155265-a1eb2cb0-a60e-4872-b930-dce890bbb5c8.png">)
+   ![Input with time not present in the log file](Images/Screen Shot 2022-10-31 at 10 54 18 PM)
    
    ![Test result](Images/creen Shot 2022-10-31 at 10 49 31 PM)
 

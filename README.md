@@ -45,8 +45,8 @@
    cd ../..;
    aws s3  cp CS441_Fall2022/LogFileGenerator/log/LogFileGenerator*.log s3://tryingloghw2;
    ```
- ####Lambda Function
-   Lambda is a compute service that lets you run code without provisioning or managing servers.
+   #### Lambda Function
+   ###### Lambda is a compute service that lets you run code without provisioning or managing servers.
    - Lambda fuction can be created in AWS/Lambda
    - Click on 'Create Function' . Select ```Python``` and choose ```arm``` architechture
    - The algorithm to be performed is to perform O(Log n) search in the log message obtained from the s3 bucket.
@@ -55,6 +55,33 @@
    - Once the indices are identified , we should go from left to right and obtain the patterns using regex matching
    - The patterns obtained are put in a string and obtain a md5 hash 
    - If there is no pattern or file there, return status code 400 else return code 200
-
+  ###### Creating the AWS API endpoint
+   - The ``` trigger ``` option has to be set for the lambda function with the following configurations API TYPE -```REST``` and SECURITY -```OPEN```
+   - Thus the api trigger will be open to the world and can be accessed by making http requests to the api.
+  ###### s3 - Lambda connection
+   - Open the lambda function under ```Configuration``` , go to ```Permissions``` and click on ``` Execution Role```.
+   - Create a role with policy access to s3 resources for writing , reading ,listing. 
+   - Name the role along with the policy and attach it to the lambda function
+   - The Lambda is now connected to s3 and can access all of its buckets.
+   
+ ## Grpc Server and Client
+   The Grpc requires protobuf for transfering the data. Protobufs should be installed in the system locally.
+   For Mac, Install brew package installer first from [here](https://brew.sh). Then after installing brew, install the 'protobuf' using the command
+   ```brew install protobuf```.
+   The server file is given under the name ```protoServer.py```. The server will be actively listening to the client side which is given under the name
+   ```protoClient.py```.
+   To execute the grpc server and client, follow the steps given below:
+     - Clone the git onto Pycharm.
+     - Make sure Python 3 is installed onto the system.
+     - Move into the directory that contains the server , client and protobuf files.
+     - Execute the following command ```python -m grpc_tools.protoc --proto_path=. ./request/logRequest.proto --python_out=. --grpc_python_out=.``` for compiling the ```logRequest.proto file```
+     - Thus, two new files are created under the name ```logRequest_pb.py``` and ```logRequest_pb_grpc.py```
+     - Now, run the server side of the program using the command ```python3 protoServer.py``` in one terminal.
+     - Open new terminal and run the client program using the command ``` python3 protoClient.py```
+     - The input paramters must be given in the command line along with client execution and must be in the order of date,time, deltaTime and pattern.
+     - Output will be received in the client side.
+  ## Rest API Server and client.
+   The rest local server is created using the flask package. The server will be listening in the port 5000. The Rest api can be tested using the ```test.py``` file.
+   The input parameters can be changed in the ```test.py``` file.
 
 

@@ -100,6 +100,8 @@
    - The input to this file is given from the config file.
    - Testing of configuration parameters and different outcomes is given here.
    - Use the command ```pytest testingServer.py```
+   - A test function is also placed in the lambda function for testing the lambda function.
+   - A test function is also placed in the protoServer file for testing if the logging is happening.
   ## GET and POST Requests
    - The get and post requests to test the lambda function is posted in the document "GET&POST Requests".
    

@@ -5,6 +5,7 @@ import request.logRequest_pb2 as logRequest_pb2
 import request.logRequest_pb2_grpc as logRequest_pb2_grpc
 import logging
 import sys
+import pytest
 
 logging.basicConfig(filename="logClient.log", level=logging.INFO)
 logging.debug("Debug logging test...")
@@ -23,6 +24,7 @@ def runClient():
     with grpc.insecure_channel('0.0.0.0:50051')as channel:
         stub = logRequest_pb2_grpc.logRequestStub(channel) #creating a stub call the function
         response = stub.logMessageFind(logRequest_pb2.requestCall(date = dateInput,time = timeInput,delta=deltaInput,pattern=patternInput))
+        logging.info(response.result)
         print(response.result) #printing response
 if __name__ == '__main__':
     runClient() #running client function.

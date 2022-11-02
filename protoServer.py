@@ -21,6 +21,10 @@ class logRequest(logRequest_pb2_grpc.logRequestServicer):
         params = {'date': request.date, 'time': request.time, 'deltaTime': request.delta, 'pattern': request.pattern}
         logging.info("GET Request made from grpc client")
         result = requests.get(configData['awsendpointapi'], params=params)
+        if result.status_code == 200:
+            logging.info("Successful response for the given input parameters")
+        elif result.status_code== 400:
+            logging.error("Failure case due to invalid input")
         return logRequest_pb2.response(result=result.text)
 
 
@@ -34,7 +38,9 @@ def serve():
     server.add_insecure_port('[::]:' + configData["portnumber"])
     server.start()
     server.wait_for_termination()
-
-
+def testLogServer():
+    with open('logServer.log','r') as f:
+        content = f.readlines()
+        assert(content is not None)
 if __name__ == '__main__':
     serve()

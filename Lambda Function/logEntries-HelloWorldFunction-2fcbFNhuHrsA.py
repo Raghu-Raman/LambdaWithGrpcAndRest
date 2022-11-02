@@ -4,6 +4,8 @@ import uuid
 import datetime
 import boto3
 import hashlib
+import pytest
+
 # import requests
 
 #perform binary search for the log messages
@@ -19,7 +21,7 @@ def binarySearch(contents,startTime,endTime):
             midTimetemp = midTimePattern.group()
             midTimeDT = datetime.datetime.strptime(midTimetemp,"%H:%M:%S.%f")
             midTime = midTimeDT.time()
-        print(midTime)
+        # print(midTime)
         if(startTime > midTime):
             left = mid+1
         elif(endTime < midTime):
@@ -105,3 +107,18 @@ def lambda_handler(event, context):
         "statusCode": 200,
         "body": returnValue
     }
+# @pytest.fixture
+def test_1():
+    logFileKey = 'LogFileGenerator.2022-10-23.log'
+    s3 = boto3.client('s3')  # create a s3 client for the s3 resource
+    data = s3.get_object(Bucket='tryingloghw2', Key=logFileKey)
+    timeParam = "21:33:00.000"
+    deltaTimeParam = "1"
+    time = datetime.datetime.strptime(timeParam, "%H:%M:%S.%f")
+    deltaTime = datetime.datetime.strptime(deltaTimeParam, "%M")
+    deltaTimeInt = int(deltaTime.strftime("%M"))
+    contents = data['Body'].read().decode('utf-8').split('\n')
+    startTime = time - datetime.timedelta(minutes=deltaTimeInt)
+    endTime = time + datetime.timedelta(minutes=deltaTimeInt)
+    l,m,r = binarySearch(contents, startTime.time(), endTime.time()) # call the binary search on the given content
+    assert(l==0 and m == 12 and r == 24)

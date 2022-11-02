@@ -50,6 +50,7 @@
    ```
    - You can instead log it into crontab -e to set it up as a cronscript and set a time ```00 20 * * * /root/Script.sh```
    #### Lambda Function
+   The lambda function is under the name ``` logEntries-HelloWorldFunction-2fcbFNhuHrsA```
    ###### Lambda is a compute service that lets you run code without provisioning or managing servers.
    - Lambda fuction can be created in AWS/Lambda
    - Click on 'Create Function' . Select ```Python``` and choose ```arm``` architechture
@@ -99,6 +100,8 @@
    - The input to this file is given from the config file.
    - Testing of configuration parameters and different outcomes is given here.
    - Use the command ```pytest testingServer.py```
+  ## GET and POST Requests
+   - The get and post requests to test the lambda function is posted in the document "GET&POST Requests".
    
   ## Output Files
   The output images are :

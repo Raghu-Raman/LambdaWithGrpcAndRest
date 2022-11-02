@@ -78,3 +78,43 @@ INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 I
 INFO:root:GET Request made from grpc client
 INFO:root:Passed in parameters. Input parameters are2022-10-24 10:40:00.000 10 INFO
 INFO:root:GET Request made from grpc client
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-24 10:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 20 INFOTAINMENT
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 10:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-24 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-30 20:40:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-23 10:00:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 10:00:00.000 10 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 2 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-11-23 21:35:00.000 2 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-11-23 21:35:00.000 20 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 20 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-11-23 21:35:00.000 20 INFOTAINMENT
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-11-23 21:35:00.000 20 NOPATTERN
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 10:35:00.000 20 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Starting the server
+INFO:root:Actively listening in port 50051
+INFO:root:Passed in parameters. Input parameters are2022-10-23 10:35:00.000 20 INFO
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-11-23 21:35:00.000 20 NOPATTERN
+INFO:root:GET Request made from grpc client
+INFO:root:Passed in parameters. Input parameters are2022-10-23 21:35:00.000 20 NOPATTERN
+INFO:root:GET Request made from grpc client

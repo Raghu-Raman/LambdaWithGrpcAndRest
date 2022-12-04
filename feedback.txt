@@ -5,7 +5,7 @@ Grading Criteria:
  - only some basic gRPC/RESTful service examples from some repos are given and nothing else is done: zero grade;
 	* tasks/video present: -0%
  - having less than five unit and/or integration scalatests: up to 10% lost;
-	* unit tests: -5%
+	* unit tests: -0%
  - missing comments and explanations from your program: up to 10% lost;
 	* comments present: -2%
  - logging is not used in your programs: up to 5% lost;
@@ -23,11 +23,16 @@ Grading Criteria:
  - the documentation exists but it is insufficient to understand your program design and models and how you assembled and deployed all components of your solution: up to 15% lost;
 	* documentation present: -0%
 
-Total Grade: 8%
+Total Grade: 13%
 Comments:
 
 Thorough and complete AWS documentation
 Good understanding of AWS concepts
 
-No test cases present. The one that's present is also calling the actual API
-Commenting absent. Print statements used
+Test cases:
+The rest API test is calling the rest url and prints the response: not a unit test.
+protoservery.py just opens the file and asserts not null. The functionality isn't being tested here as well.
+valid test cases in testingServer.py
+
+
+Commenting absent. Print statements used. Hard coding strings in Python code.
